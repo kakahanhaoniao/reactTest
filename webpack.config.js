@@ -24,7 +24,10 @@ module.exports = {
     loaders: [{
         test: /\.js$/,
         exclude: path.resolve(__dirname, 'node_modules'),
-        loader: ["react-hot-loader", 'babel-loader']
+        loader: [
+            "react-hot-loader",
+            'babel-loader?presets[]=react,presets[]=es2015,presets[]=stage-2'
+        ]
       },
       {
         test: /\.css/,
@@ -73,12 +76,12 @@ module.exports = {
     // new openBrowserWebpackPlugin({ url: 'http://localhost:8080' })
   ],
   devServer: {
-    publicPath: "/static/",
     stats: {
       colors: true
     },
     port: 8080,
-    contentBase: 'build',
+    // publicPath: "/static/", //部署打包时添加
+    // contentBase: 'build',  //部署打包时添加
     inline: true,
     hot: true,
     proxy: {

@@ -6,7 +6,7 @@ class Button extends Component {
   }
   render(){
     const style = require('components/Button/buttonStyle');
-
+    debugger
     return (
       <button className="my-button" onClick={this.handleClick.bind(this)}>
         快戳我
@@ -15,4 +15,6 @@ class Button extends Component {
   }
 }
 
+console.log( React );
+console.log( Component );
 export default Button;

@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import component from './component';
 import Button from '../components/Button/button';
-component();
+// component();
 // class HelloWorld extends Component {
 //   render(){
 //     return (
