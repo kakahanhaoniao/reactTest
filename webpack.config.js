@@ -9,7 +9,7 @@ module.exports = {
     entry1: path.resolve(__dirname, 'src/index.js'),
     entry2: path.resolve(__dirname, 'src/index2.js')
   },
-  devtool: 'eval-source-map',
+  devtool: 'source-map',
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: '[name].js?[hash]'
