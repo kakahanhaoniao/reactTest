@@ -80,6 +80,7 @@ module.exports = {
       colors: true
     },
     port: 8080,
+    historyApiFallback: true,
     // publicPath: "/static/", //部署打包时添加
     // contentBase: 'build',  //部署打包时添加
     inline: true,
