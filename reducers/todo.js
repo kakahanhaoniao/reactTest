@@ -22,15 +22,22 @@ const todo = (state, action) => {
   }
 }
 
+const initialState = [
+  {
+    text: 'Use Redux',
+    completed: false,
+    id: 0
+  }
+]
 
-export const todos = (state,action) => {
+export const todos = (state = initialState,action) => {
   debugger;
   switch (action.type) {
     case ADD_TODO:
-      return {
+      return [
         ...state,
-        todo(undefined, action);
-      }
+        todo(undefined, action)
+      ];
     case TOGGLETODO:
       state.map((t) => todo(t, action));
     default:

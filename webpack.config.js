@@ -7,7 +7,8 @@ let ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
   entry: {
     entry1: path.resolve(__dirname, 'src/index.js'),
-    entry2: path.resolve(__dirname, 'src/index2.js')
+    // entry2: path.resolve(__dirname, 'src/index2.js'),
+    entry3: path.resolve(__dirname, 'src/redux.js')
   },
   devtool: 'source-map',
   output: {
